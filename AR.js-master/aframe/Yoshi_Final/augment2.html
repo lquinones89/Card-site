@@ -107,7 +107,7 @@ function bezierEvaluate(p0, p1, p2, p3, t) {
         </input>
     </div>
 <!-- <a-scene embedded arjs='debugUIEnabled: false; sourceType: video; sourceUrl:../../data/videos/headtracking.mp4;'> -->
-    <a-scene embedded arjs='debugUIEnabled: false; sourceType: webcam' vr-mode-ui='enabled: false'>
+    <a-scene embedded arjs='debugUIEnabled: true; sourceType: webcam' vr-mode-ui='enabled: false'>
     <a-entity id="mouseCursor" cursor="rayOrigin: mouse" raycaster="objects: .intersectable; useWorldCoordinates: true;"></a-entity>
 <!-- END: Middle HTML -->
 
@@ -117,7 +117,7 @@ function bezierEvaluate(p0, p1, p2, p3, t) {
 </a-assets>
 <!-- END: Unity Compiled Assets -->
 <!-- BEGIN: Add Image Target (marker) -->
-<a-marker preset="custom" type="pattern" url="https://lquinones89.github.io/Card-site/AR.js-master/aframe/Yoshi_Final/pattern/pattern-AR-Pattern.patt">
+<a-marker type='pattern' url='https://lquinones89.github.io/Card-site/AR.js-master/aframe/Yoshi_Final/pattern/pattern-AR-Pattern.patt' emitevents='true'>
 
 <!-- END: Add Image Target (marker) -->
 <!-- BEGIN: Unity Compiled Objects -->
